@@ -1,0 +1,4 @@
+#Pagerduty
+pagerduty_token: SET_PAGERDUTY_TOKEN
+pagerduty_service_list: SERVICE_NAME1,SERVICE_NAME2,SERVICE_NAME3
+requester_id: SET_REQUESTER_ID

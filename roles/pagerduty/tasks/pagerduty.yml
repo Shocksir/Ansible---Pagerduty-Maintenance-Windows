@@ -1,0 +1,14 @@
+- name: "Get Fact"
+  set_fact:
+    hours: "{{ hours }}"
+    minutes: "{{ minutes }}"
+    services: "{{ services }}"
+
+- name: 'Create Maintenance Window'
+  pagerduty: name=Peakgames
+             token="{{ pagerduty_token }}"
+             requester_id={{ requester_id }}
+             hours="{{ hours }}"
+             minutes="{{ minutes }}"
+             state=running
+             service="{{ pagerduty_service_list }}"

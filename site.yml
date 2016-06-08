@@ -1,0 +1,9 @@
+- name: Pagerduty Maintenance Windows !
+  hosts: localhost
+  connection: local
+  vars_files:
+   - group_vars/pagerduty
+  gather_facts: false
+  tags: full_provision
+  roles:
+    - pagerduty
